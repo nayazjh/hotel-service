@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/hotelservice
+    username: root
+    password: born2win
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+      name: HOTEL-SERVICE
+  config:
+    import: optional:configserver:http://localhost:8084
